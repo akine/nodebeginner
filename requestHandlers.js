@@ -2,7 +2,7 @@ var querystring = require("querystring"),
     fs = require("fs"),
     formidable = require("formidable");
 
-function start(response, postData) {
+function start(response) {
   console.log("Request handler 'start' was called.");
 
   var body = '<html>'+
@@ -13,7 +13,7 @@ function start(response, postData) {
     '<body>'+
     '<form action="/upload" enctype="multipart/form-data" '+
     'method="post">'+
-    '<input type="file" name="upload">'+
+    '<input type="file" name="upload" multiple="multiple">'+
     '<input type="submit" value="Upload file" />'+
     '</form>'+
     '</body>'+
