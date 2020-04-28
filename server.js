@@ -1,6 +1,6 @@
 var formidable = require("formidable"),
     http = require("http"),
-    sys = require("sys");
+    sys = require("util");
 var http = require("http");
 var url = require("url");
 
